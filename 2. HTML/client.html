@@ -8,13 +8,15 @@
     <title>Fantasy Cake</title>
 </head>
 <body>
+    <!-- BANNER -->
     <div class="banner">
         <img src="images/fantasy_cake.png" alt="Fantasy Cake Logo" style="width: 15%;"/>
         <h1>FANTASY CAKE</h1>
     </div>
+    <!-- NAVIGATION BAR -->
     <ul class="horizontal">
         <li>
-            <a href="">Cakes</a>
+            <a href="#" id="cakes">Cakes</a>
         </li>
         <li>
             <a href="">Flavors</a>
@@ -29,8 +31,8 @@
     </ul> <br><br><br>
 
     <div>
-        <h1 align="center">Cakes</h1>
-        <table align="center" border="4%">
+        <h1 id="cakes">Cakes</h1> <br>
+        <table border="4%">
             <tr>
                 <th>Size</th>
                 <th>Persons</th>
@@ -57,59 +59,99 @@
                 <td>$60</td>
             </tr>
         </table>
-    </div><br><br><br><hr>
+    </div><br><br><hr>
 
     <div>
-        <h1 align="center">Flavors</h1>
+        <h1>Flavors</h1>
         <ul>
             <li>Chocolate</li>
             <li>Vanilla</li>
             <li>Lemon</li>
             <li>Moka</li>
-            <li>Milkey Way</li>
         </ul>
     </div> <br><hr>
 
     <div>
-        <h1 align="center">Decorations</h1>
+        <h1>Decorations</h1>
         <ul>
             <li>Fondant</li>
             <li>Cobertura de Chocolate</li>
             <li>Betun</li>
             <li>Chispas de chocolate</li>
             <li>Chispas de colores</li>
-            <li>Milkey Way</li>
+            <li>Milky Way</li>
             <li>Bubbu Lubu</li>
         </ul>
     </div> <br><hr>
     
     <div>
-        <h1 align="center">Bake your Cake</h1>
+        <br><h1>Bake your Cake</h1><br>
         <form>
-            <label for="cake_size">Choose your cake size:</label> <br>
-            <select name="cake_size" id="cake">
+            <fieldset>
+                <legend>Contact Data</legend>
+                <label for="name">Enter your name:</label> <br>
+                <input type="text" id="name" name="name"> <br><br>
+
+                <label for="phone_number">Enter your phone number:</label> <br>
+                <input type="tel" id="phone_number" name="phone" maxlength="10" pattern="[\d]{10}"> <br><br>
+
+                <label for="email">Enter your email</label> <br>
+                <input type="email" id="email" name="email"> <br><br>
+                <button type="reset">Reset</button>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Details</legend>
+                <label for="cake_size">Choose your cake size:</label> <br><br>
+                <select name="cake_size" id="cake">
                 <option value="big">Big</option>
                 <option value="medium">Medium</option>
                 <option value="small"> Small</option>
                 <option value="individual" selected>Individual</option>
-            </select> <br><br>
+                </select> <br><br>
+
+                <label for="flavor">Choose your favorite flavors</label> <br>
+                <input type="checkbox" id="flavor1" name="flavor" value="Chocolate">
+                <label for="flavor1">Chocolate</label> <br>
+                <input type="checkbox" id="flavor2" name="flavor" value="Vanilla">
+                <label for="flavor2">Vanilla</label> <br>
+                <input type="checkbox" id="flavor3" name="flavor" value="Lemon">
+                <label for="flavor3">Lemon</label> <br>
+                <input type="checkbox" id="flavor4" name="flavor" value="Moka">
+                <label for="flavor4">Moka</label> <br> <br>
+
+                <label for="dec1">Choose your favorite decorations/topings</label> <br>
+                <input type="checkbox" id="dec1" name="decoration" value="Fondant">
+                <label for="dec1">Fondant</label> <br>
+                <input type="checkbox" id="dec2" name="decoration" value="Cobertura de chocolate">
+                <label for="dec2">Cubierta de chocolate</label> <br>
+                <input type="checkbox" id="dec3" name="decoration" value="Betun">
+                <label for="dec3">Betun</label> <br>
+                <input type="checkbox" id="dec4" name="decoration" value="Chispas de chocolate">
+                <label for="dec4">Chispas de chocolate</label> <br>
+                <input type="checkbox" id="dec5" name="decoration" value="Chispas de colores">
+                <label for="dec2">Chispas de chocolate</label> <br>
+                <input type="checkbox" id="dec6" name="decoration" value="Milky Way">
+                <label for="dec6">Milky Way</label> <br>
+                <input type="checkbox" id="dec7" name="decoration" value="Bubbu Lubu">
+                <label for="dec7">Bubbu Lubu</label> <br>
 
 
-            <label for="name">Enter your name:</label> <br>
-            <input type="text" id="name" name="name"> <br><br>
-
-            <label for="phone_number">Enter your phone number:</label> <br>
-            <input type="tel" id="phone_number" name="phone" maxlength="10" pattern="[\d]{10}"> <br><br>
-
-            <label for="email">Enter your email</label> <br>
-            <input type="email" id="email" name="email"> <br><br>
-
-            <label for="notes">Notes:</label> <br>
-            <textarea name="notes" id="notes" cols="30" rows="10" maxlength="250"></textarea> <br><br>
-
-            <button type="button" onclick="alert('We\'re preparing your order')">Submit Order</button> <br><br>
+                <br><label for="notes">Notes:</label> <br>
+                <textarea name="notes" id="notes" cols="30" rows="10" maxlength="500"></textarea> <br>
+                <button type="button" onclick="alert('We\'re preparing your order')">Submit Order</button> 
+                <button type="reset">Reset</button> <br>
+            </fieldset> <br><br>
         </form>
     </div>
+
+    <hr>
+
+    <pre>
+        J.B. Lobos Local 2 y 3, Pocitos y Rivera, 91729 Veracruz, Ver. <br>
+        Lunes a Viernes de 9 am a 9 pm <br>
+        2298475638
+    </pre>
 
 </body>
 </html>
