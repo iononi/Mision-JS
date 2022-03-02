@@ -24,7 +24,7 @@ ul.horizontal, a {
     text-decoration: none;
 }
 
-div, h1, table {
+div, table {
     margin: auto;
     text-align: center;
 }
@@ -52,5 +52,5 @@ legend {
 }
 
 fieldset {
-    border-color: violet;
+    border-color: rgb(230, 170, 230);
 }
