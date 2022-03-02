@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/mystyle.css">
+    <title>Fantasy Cake</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="images/fantasy_cake.png" alt="Fantasy Cake Logo" style="width: 15%;"/>
+        <h1>FANTASY CAKE</h1>
+    </div>
+    <ul class="horizontal">
+        <li>
+            <a href="">Cakes</a>
+        </li>
+        <li>
+            <a href="">Flavors</a>
+        </li>
+        <li>
+            <a href="">Decoration</a>
+        </li>
+        <li>
+            <a href="">Bake your Cake</a>
+        </li>
+        <li><a href="">About Us</a></li>
+    </ul> <br><br><br>
+
+    <div>
+        <h1 align="center">Cakes</h1>
+        <table align="center" border="4%">
+            <tr>
+                <th>Size</th>
+                <th>Persons</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Big</td>
+                <td>8-12</td>
+                <td>$400</td>
+            </tr>
+            <tr>
+                <td>Medium</td>
+                <td>6</td>
+                <td>$250</td>
+            </tr>
+            <tr>
+                <td>Small</td>
+                <td>2-4</td>
+                <td>$140</td>
+            </tr>
+            <tr>
+                <td>Individual</td>
+                <td>1</td>
+                <td>$60</td>
+            </tr>
+        </table>
+    </div><br><br><br><hr>
+
+    <div>
+        <h1 align="center">Flavors</h1>
+        <ul>
+            <li>Chocolate</li>
+            <li>Vanilla</li>
+            <li>Lemon</li>
+            <li>Moka</li>
+            <li>Milkey Way</li>
+        </ul>
+    </div> <br><hr>
+
+    <div>
+        <h1 align="center">Decorations</h1>
+        <ul>
+            <li>Fondant</li>
+            <li>Cobertura de Chocolate</li>
+            <li>Betun</li>
+            <li>Chispas de chocolate</li>
+            <li>Chispas de colores</li>
+            <li>Milkey Way</li>
+            <li>Bubbu Lubu</li>
+        </ul>
+    </div> <br><hr>
+    
+    <div>
+        <h1 align="center">Bake your Cake</h1>
+        <form>
+            <label for="cake_size">Choose your cake size:</label> <br>
+            <select name="cake_size" id="cake">
+                <option value="big">Big</option>
+                <option value="medium">Medium</option>
+                <option value="small"> Small</option>
+                <option value="individual" selected>Individual</option>
+            </select> <br><br>
+
+
+            <label for="name">Enter your name:</label> <br>
+            <input type="text" id="name" name="name"> <br><br>
+
+            <label for="phone_number">Enter your phone number:</label> <br>
+            <input type="tel" id="phone_number" name="phone" maxlength="10" pattern="[\d]{10}"> <br><br>
+
+            <label for="email">Enter your email</label> <br>
+            <input type="email" id="email" name="email"> <br><br>
+
+            <label for="notes">Notes:</label> <br>
+            <textarea name="notes" id="notes" cols="30" rows="10" maxlength="250"></textarea> <br><br>
+
+            <button type="button" onclick="alert('We\'re preparing your order')">Submit Order</button> <br><br>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+div.banner {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+    background-color: violet;
+    padding: 20px 20px;
+}
+
+ul.horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.horizontal, a {
+    display: flex;
+    color: white;
+    text-align: center;
+    font-size: large;
+    padding: 8px 30px;
+    text-decoration: none;
+}
+
+td, div {
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+    font-size: larger;
+}
+
+label {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-style: bold;
+}
+
+textarea {
+    width: auto;
+    height: auto;
+}
